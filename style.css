@@ -1,0 +1,477 @@
+body{
+    background-color: #F6DBA7;
+}
+.menu-container{
+    margin-top:1.5rem;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    border-top: thin solid #2F3A2A;
+    border-bottom: thin solid #2F3A2A;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.big-logo img{
+    width: 25rem;
+    height: 3rem;
+}
+.big-logo{
+    margin-top:1.7rem;
+    display:flex;
+    align-items:center;
+    margin-left:3rem;
+    margin-bottom: 1.75rem;
+}
+#menu{
+    display:flex;
+    align-items:center ;
+    margin-right:4rem;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    list-style: none;
+    position: relative;
+    color:#2F3A2A;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-family:'Paquito-Variable' ;
+}
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.24rem;
+    border-radius: 25px;
+    background: #2F3A2A;
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+#stick{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.Since{
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    border-bottom: thin solid #2F3A2A;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.Since h1{
+    font-family: 'Paquito-Variable';
+    font-size:1.25rem;
+
+    color:#2F3A2A;
+    word-spacing: 0.4rem;
+}
+@keyframes slide{
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide2{
+    from{
+        transform:translateX(-100%)
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
+/*Slider*/
+.slider{
+   overflow: hidden;
+   padding:0.3rem;
+   margin-left:-0.5rem;
+   margin-right:-0.5rem;
+   white-space: nowrap;
+   border-bottom: thin solid #2F3A2A;
+   margin-bottom: 0.3rem;
+}
+.slider2{
+    align-items: center;
+    overflow:hidden;
+    padding:0.3rem;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    white-space: nowrap;
+    margin-top:0.3rem;
+    border-bottom: thin solid #2F3A2A;
+    border-top: thin solid #2F3A2A;
+ }
+.logo-slide img{
+    height:3.5rem;
+}
+.logo-slide2 img{
+    height:3.5rem;
+}
+.logo-slide{
+    display:inline-block;
+    animation:35s slide infinite linear;
+}
+.logo-slide2{
+    display:inline-block;
+    animation:35s slide2 infinite linear;
+}
+/*END*/
+
+
+
+/*Section-1 intro, shop*/
+.Main-section{
+
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    background-color: #2F3A2A;
+    background-image:url(img/Frame\ 4\ \(1\).svg) ;
+    background-size: cover;
+    align-content: center;
+    
+}
+.wrapper-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Hero Section*/
+.main-section{
+    margin-top: -3rem;
+    margin-right: 4rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    justify-content: center;
+}
+.quotes{
+    margin-bottom: 1rem;
+}
+.quotes h1{
+    font-family: 'Telma-Variable';
+    font-size:4.6rem;
+    color: #F6DBA7;
+}
+.quotes h2{
+    margin-top: -2.6rem;
+    margin-left:5rem;
+    font-size: 1.5rem;
+    font-family:'Paquito-Variable';
+    width:50rem;
+    color: #FFF9ED;
+}
+.quotes h2 span{
+ 
+    color: #F6DBA7;
+}
+/*END*/
+
+/*MODEL PIC*/
+.model{
+    margin-left: 4rem;
+    position:relative;
+    margin-top:3.5rem;
+    margin-bottom: 3.5rem;
+}
+.model img{
+    margin:0.5rem;
+}
+.button img{
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+}
+.button{
+    align-items: center;
+    position: absolute;
+    height: 8rem;
+    width: 8rem;
+    background-color: #F6DBA7;
+    border-radius: 50%;
+    bottom:35%;
+    left:50%;
+    transform: translateX(-50%); /* Center horizontally */
+    transition: all 0.3s ease-in-out;
+    border:solid #2F3A2A;
+}
+.button1 li a{
+    font-family:'Paquito-Variable';
+    text-decoration: none;
+    color: #2F3A2A;
+    font-size: 1.5rem;
+    background-color: #F6DBA7;
+    border-radius:2rem ;
+    padding:1rem;
+    transition: all 0.3s ease-in-out;
+    border:  solid #2F3A2A; 
+
+}
+.button1 li a:hover{
+    font-family:'Paquito-Variable';
+    text-decoration: none;
+    color: #F6DBA7;
+    font-size: 1.5rem;
+    background-color: #2F3A2A;
+    border-radius:2rem ;
+    padding:1rem;
+    border:  solid #F6DBA7; 
+    transition: all 0.3s ease-in-out;
+
+}
+.button1{
+    margin-top:2.5rem;
+    list-style: none;
+}
+/*END*/
+
+
+
+/* Designed fot you designed by you*/
+.Main-Section-1{
+    display: flex;
+    border-bottom: thin solid #2F3A2A;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    overflow: hidden;
+}
+.Description-1{
+    padding-top:8rem;
+    width:50%;
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+.Description-1 p{
+    font-size: 1.6rem;
+    font-family:'Paquito-Variable';
+    color: #2F3A2A;
+    word-spacing: 0.4rem;
+}
+.Description-1 h1{
+    font-size: 3.5rem;
+    font-family:'Paquito-Variable';
+    color: #2F3A2A;
+    word-spacing: 0.4rem;
+}
+.Pic1 img{
+    transform: rotate(-5deg);
+    margin-right:-0.5rem;
+    width:42rem;
+    height:30rem;
+    border-radius: 2REM;
+    border:thin solid;
+}
+.Pic1 img:hover{
+    transform: rotate(5deg);
+}
+.Pic1{
+
+    margin-right:-0.5rem;
+    width:50%;
+    padding-top: 5.5rem;
+    text-align: center;
+    border-left: thin solid #2F3A2A;
+    padding-bottom: 5rem;
+}
+/* END*/
+
+
+
+
+/*We Love to design section*/
+.Main-Section-2{
+    display: flex;
+    margin-top:-0.3rem;
+    border-bottom: thin solid #2F3A2A;
+    margin-left:-0.5rem;
+    overflow: hidden;
+}
+.Description-2{
+    text-align: right;
+    padding-top:8rem;
+    width:50%;
+    padding-right: 4rem;
+}
+.Description-2 p{
+    margin-left:2.5rem;
+    font-size: 1.6rem;
+    font-family:'Paquito-Variable';
+    color: #2F3A2A;
+    word-spacing: 0.3rem;
+}
+.Description-2 h1{
+    font-size: 3.5rem;
+    font-family:'Paquito-Variable';
+    color: #2F3A2A;
+    word-spacing: 0.4rem;
+}
+.Pic2 img{
+    transform: rotate(5deg);
+    margin-right:-0.5rem;
+    width:42rem;
+    height:30rem;
+    border-radius: 2REM;
+    border:thin solid;
+}
+.Pic2 img:hover{
+    transform: rotate(-5deg);
+}
+.Pic2{
+    width:50%;
+    padding-top: 5.5rem;
+    text-align: center;
+    border-right:thin solid #2F3A2A;
+    padding-bottom: 5rem;
+}
+/*END*/
+
+
+/*You only get the best of us*/
+.Final{
+    margin-bottom:5rem;
+    border-bottom: thin solid #2F3A2A;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    background-color: #2F3A2A;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+}
+.title img{
+    margin:1rem;
+}
+.title h1{
+    font-size: 3.5rem;
+    color: #F6DBA7;
+    font-family:'Paquito-Variable';
+    word-spacing: 0.4rem;
+}
+.commitment{
+    border-left: thin solid #2F3A2A;
+    border-right: thin solid #2F3A2A;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    text-align: center;
+    color: #2F3A2A;
+    font-family:'Paquito-Variable';
+    word-spacing: 0.4rem;
+}
+/*END*/
+
+
+/*Footer*/
+.footer{
+    font-family: 'Paquito-Variable';
+    font-size:3.6rem;
+    text-align: center;
+    color: #2F3A2A;
+}
+@font-face {
+    font-family: 'Paquito-Variable';
+    src: url('fonts/Paquito-Variable.woff2') format('woff2'),
+         url('fonts/Paquito-Variable.woff') format('woff'),
+         url('fonts/Paquito-Variable.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Regular';
+    src: url('fonts/Paquito-Regular.woff2') format('woff2'),
+         url('fonts/Paquito-Regular.woff') format('woff'),
+         url('fonts/Paquito-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Medium';
+    src: url('fonts/Paquito-Medium.woff2') format('woff2'),
+         url('fonts/Paquito-Medium.woff') format('woff'),
+         url('fonts/Paquito-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Bold';
+    src: url('fonts/Paquito-Bold.woff2') format('woff2'),
+         url('fonts/Paquito-Bold.woff') format('woff'),
+         url('fonts/Paquito-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Telma-Variable';
+    src: url('font2/Telma-Variable.woff2') format('woff2'),
+         url('font2/Telma-Variable.woff') format('woff'),
+         url('font2/Telma-Variable.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Telma-Light';
+    src: url('font2/Telma-Light.woff2') format('woff2'),
+         url('font2/Telma-Light.woff') format('woff'),
+         url('font2/Telma-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Telma-Regular';
+    src: url('font2/Telma-Regular.woff2') format('woff2'),
+         url('font2/Telma-Regular.woff') format('woff'),
+         url('font2/Telma-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Telma-Medium';
+    src: url('font2/Telma-Medium.woff2') format('woff2'),
+         url('font2/Telma-Medium.woff') format('woff'),
+         url('font2/Telma-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Telma-Bold';
+    src: url('font2/Telma-Bold.woff2') format('woff2'),
+         url('font2/Telma-Bold.woff') format('woff'),
+         url('font2/Telma-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Telma-Black';
+    src: url('font2/Telma-Black.woff2') format('woff2'),
+         url('font2/Telma-Black.woff') format('woff'),
+         url('font2/Telma-Black.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  

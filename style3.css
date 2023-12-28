@@ -1,0 +1,332 @@
+body{
+    background-color: #F6DBA7;
+}
+/*MENU*/
+.menu-container{
+    margin-top:1.5rem;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    border-top: thin solid #2F3A2A;
+    border-bottom: thin solid #2F3A2A;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.big-logo img{
+    width: 25rem;
+    height: 3rem;
+}
+.big-logo{
+    margin-top:1.7rem;
+    display:flex;
+    align-items:center;
+    margin-left:3rem;
+    margin-bottom: 1.75rem;
+}
+#menu{
+    display:flex;
+    align-items:center ;
+    margin-right:4rem;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    list-style: none;
+    position: relative;
+    color:#2F3A2A;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-family:'Paquito-Variable' ;
+}
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.24rem;
+    border-radius: 25px;
+    background: #2F3A2A;
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+#stick{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+/*END*/
+
+@keyframes slide{
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide2{
+    from{
+        transform:translateX(-100%)
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
+/*END*/
+
+
+
+/*Slider*/
+.slider{
+   overflow: hidden;
+   padding:0.3rem;
+   margin-left:-0.5rem;
+   margin-right:-0.5rem;
+   white-space: nowrap;
+   margin-top:0.3rem;
+   border-top: thin solid #2F3A2A;
+   border-bottom: thin solid #2F3A2A;
+   margin-bottom: 0.3rem;
+}
+.slider2{
+    align-items: center;
+    overflow:hidden;
+    padding:0.3rem;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    white-space: nowrap;
+    margin-top:4rem;
+    border-bottom: thin solid #2F3A2A;
+    border-top: thin solid #2F3A2A;
+ }
+.logo-slide img{
+    height:3.5rem;
+}
+.logo-slide2 img{
+    height:3.5rem;
+}
+.logo-slide{
+    display:inline-block;
+    animation:35s slide infinite linear;
+}
+.logo-slide2{
+    display:inline-block;
+    animation:35s slide2 infinite linear;
+}
+
+
+
+
+
+.Queen-title{
+    display:flex;
+    justify-content: center;
+    background-color: #2F3A2A;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+}
+.Queen-title img{
+    margin:1rem;
+}
+.Queen-title h1{
+    font-size: 3.3rem;
+    color: #F6DBA7;
+    font-family:'Paquito-Variable';
+    word-spacing: 0.4rem;
+}
+
+
+
+
+.Intro-1{
+    display: flex;
+    margin-top: 4rem;
+}
+.content{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:4rem;
+    margin-right: 2rem;
+}
+.content2{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    border-left: solid thin #2F3A2A;
+}
+.content h1{
+    word-spacing: 0.3rem;
+    font-family:'Paquito-Variable' ;
+    font-size: 1.5rem;
+    color:#2F3A2A;
+}
+.content span{
+    word-spacing: 0.3rem;
+    font-family:'Paquito-Variable' ;
+    font-size: 3rem;
+    color:#2F3A2A;
+}
+.content2 img{
+    border-radius: 3rem;
+    border:solid #2F3A2A;
+    width:40rem;
+    height:30rem;
+    transform: rotate(-5deg);
+}
+
+.content2 img:hover{
+    transform: rotate(5deg);
+}
+
+
+
+
+.Intro2{
+    margin-top:4rem;
+    display:flex;
+    margin-bottom: 4rem;
+}
+.content1{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    border-right: thin solid #2F3A2A;
+
+}
+.content1 img{
+    border-radius: 3rem;
+    height: 46rem;
+    width:32rem;
+    transform: rotate(5deg);
+    border: solid #2F3A2A;
+}
+.content1 img:hover{
+    transform: rotate(-5deg);
+}
+
+.content22{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin-left:3rem;
+    margin-right:4rem;
+}
+.content22 h1{
+    font-family:'Paquito-Variable' ;
+    font-size: 1.5rem;
+    color: #2F3A2A;
+    word-spacing: 0.3rem;
+}
+.content22 span{
+    font-family:'Paquito-Variable' ;
+    font-size: 3rem;
+    color: #2F3A2A;
+    word-spacing: 0.3rem;
+}
+
+
+
+.Article-title{
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    gap:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F3A2A;
+}
+.Article-title h1{
+    font-family:'Paquito-Variable' ;
+    font-size: 3.3rem;
+    color: #F6DBA7;
+    word-spacing: 0.3rem;
+}
+.Article-1 img{
+    height: 35rem;
+    width:30rem;
+    cursor: pointer;
+}
+.Articlewrapper{
+    text-decoration: none;
+    list-style-type: none;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.Articlewrapper li a{
+    font-family:'Paquito-Variable';
+    text-decoration: none;
+    color: #F6DBA7;
+    font-size: 1.5rem;
+    background-color: #2F3A2A;
+    border-radius:2rem ;
+    padding:1rem;
+    border:  solid #F6DBA7; 
+    transition: all 0.3s ease-in-out;
+    margin-top: 2rem;
+
+}
+.Articlewrapper li a:hover{
+    font-family:'Paquito-Variable';
+    text-decoration: none;
+    color: #2F3A2A;
+    font-size: 1.5rem;
+    background-color: #F6DBA7;
+    border-radius:2rem ;
+    padding:1rem;
+    transition: all 0.3s ease-in-out;
+    border:  solid #2F3A2A; 
+}
+
+.footer{
+    border-top: thin solid #2F3A2A;
+    font-family: 'Paquito-Variable';
+    font-size:3.6rem;
+    text-align: center;
+    color: #2F3A2A;
+}
+@font-face {
+    font-family: 'Paquito-Variable';
+    src: url('fonts/Paquito-Variable.woff2') format('woff2'),
+         url('fonts/Paquito-Variable.woff') format('woff'),
+         url('fonts/Paquito-Variable.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Regular';
+    src: url('fonts/Paquito-Regular.woff2') format('woff2'),
+         url('fonts/Paquito-Regular.woff') format('woff'),
+         url('fonts/Paquito-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Medium';
+    src: url('fonts/Paquito-Medium.woff2') format('woff2'),
+         url('fonts/Paquito-Medium.woff') format('woff'),
+         url('fonts/Paquito-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Bold';
+    src: url('fonts/Paquito-Bold.woff2') format('woff2'),
+         url('fonts/Paquito-Bold.woff') format('woff'),
+         url('fonts/Paquito-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+/*END*/

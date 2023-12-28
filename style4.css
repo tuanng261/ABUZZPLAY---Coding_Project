@@ -1,0 +1,189 @@
+body{
+    background-color: #F6DBA7;
+}
+.menu-container{
+    margin-top:1.5rem;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    border-top: thin solid #2F3A2A;
+    border-bottom: thin solid #2F3A2A;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.big-logo img{
+    width: 25rem;
+    height: 3rem;
+}
+.big-logo{
+    margin-top:1.7rem;
+    display:flex;
+    align-items:center;
+    margin-left:3rem;
+    margin-bottom: 1.75rem;
+}
+#menu{
+    display:flex;
+    align-items:center ;
+    margin-right:4rem;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    list-style: none;
+    position: relative;
+    color:#2F3A2A;
+    text-decoration: none;
+    font-size:1.5rem;
+    font-family:'Paquito-Variable' ;
+}
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.24rem;
+    border-radius: 25px;
+    background: #2F3A2A;
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+#stick{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.Since{
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    border-bottom: thin solid #2F3A2A;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.Since h1{
+    font-family: 'Paquito-Variable';
+    font-size:1.25rem;
+
+    color:#2F3A2A;
+    word-spacing: 0.4rem;
+}
+@keyframes slide{
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide2{
+    from{
+        transform:translateX(-100%)
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
+/*Slider*/
+.slider{
+   overflow: hidden;
+   padding:0.3rem;
+   margin-left:-0.5rem;
+   margin-right:-0.5rem;
+   white-space: nowrap;
+   border-bottom: thin solid #2F3A2A;
+   margin-bottom: 0.3rem;
+}
+.slider2{
+    align-items: center;
+    overflow:hidden;
+    padding:0.3rem;
+    margin-left:-0.5rem;
+    margin-right:-0.5rem;
+    white-space: nowrap;
+    margin-top:0.3rem;
+    border-bottom: thin solid #2F3A2A;
+    border-top: thin solid #2F3A2A;
+ }
+.logo-slide img{
+    height:3.5rem;
+}
+.logo-slide2 img{
+    height:3.5rem;
+}
+.logo-slide{
+    display:inline-block;
+    animation:35s slide infinite linear;
+}
+.logo-slide2{
+    display:inline-block;
+    animation:35s slide2 infinite linear;
+}
+
+
+
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Location{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 4rem;
+}
+.Location iframe{
+    border-radius: 3rem;
+    border-style:solid;
+}
+.footer{
+    border-top: thin solid #2F3A2A;
+    font-family: 'Paquito-Variable';
+    font-size:3.6rem;
+    text-align: center;
+}
+/*END*/
+@font-face {
+    font-family: 'Paquito-Variable';
+    src: url('fonts/Paquito-Variable.woff2') format('woff2'),
+         url('fonts/Paquito-Variable.woff') format('woff'),
+         url('fonts/Paquito-Variable.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Regular';
+    src: url('fonts/Paquito-Regular.woff2') format('woff2'),
+         url('fonts/Paquito-Regular.woff') format('woff'),
+         url('fonts/Paquito-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Medium';
+    src: url('fonts/Paquito-Medium.woff2') format('woff2'),
+         url('fonts/Paquito-Medium.woff') format('woff'),
+         url('fonts/Paquito-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Paquito-Bold';
+    src: url('fonts/Paquito-Bold.woff2') format('woff2'),
+         url('fonts/Paquito-Bold.woff') format('woff'),
+         url('fonts/Paquito-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+/*END*/
